@@ -1,0 +1,133 @@
+.signup-box {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.signup-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.input-field {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-field label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.input-field input:focus {
+  border-color: #007bff;
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #666;
+  margin: 10px 0;
+}
+
+form label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 2rem;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.forgot {
+  display: block;
+  font-size: 13px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.signup-link {
+  font-size: 13px;
+  color: #666;
+  margin-top: 15px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
