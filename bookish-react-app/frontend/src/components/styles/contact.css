@@ -1,0 +1,83 @@
+body {
+    background-color: #f6f2f2;
+    margin: 0;
+}
+
+section {
+    --background-green: #54855d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+form {
+    max-width: 1000px;
+    max-height: auto;
+    width: 90%;
+    height: auto;
+    background: #fff;
+    padding: 30px 80px 30px;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    margin: 20px;
+}
+
+form h2 {
+    font-size: 30px;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+form .input-box {
+    margin: 2rem;
+}
+
+.field {
+    height: 150px;
+    /* Increase height (adjust as needed) */
+    resize: vertical;
+    /* Allow vertical resizing if desired */
+    width: 250px;
+}
+
+.input-box .field {
+    width: 100%;
+    height: auto;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+}
+
+.input-box .field.mess {
+    height: 200px;
+    resize: none;
+}
+
+form button {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    background: var(--background-green);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    margin: 2rem auto 0;
+    /* Centers the button horizontally */
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+    /* Smooth transitions for responsive changes */
+}
+
+form button:hover {
+    background: #3f6646;
+}

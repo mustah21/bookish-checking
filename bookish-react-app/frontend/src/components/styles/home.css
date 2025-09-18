@@ -1,0 +1,117 @@
+header {
+  padding-top: 1rem;
+  text-align: center;
+  color: #49684f;
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+}
+
+header h1 {
+  font-size: 45px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  margin: 2rem 0.5rem 2rem;
+  padding: 1rem;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  text-align: left;
+  word-break: break-word; /* Prevent text overflow */
+  overflow: hidden;
+  margin-left: 2rem;
+}
+
+.main-text {
+  font-size: clamp(20px, 4vw, 35px); /* Responsive font size */
+  color: #819d7e;
+  word-break: break-word; 
+}
+
+.below-text {
+  font-size: clamp(20px, 4vw, 25px); /* Responsive font size */
+  margin-top: 2rem;
+  color: #44624a;
+  word-break: break-word;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: clamp(300px, 50vw, 500px);
+  height: auto;
+}
+
+.button {
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4facfe;
+  background-color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+
+
+.btn-text {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+  transition: ease 0.5s;
+}
+
+@media (max-width: 850px) {
+  .content-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .text-content {
+    margin: 0 1rem; /* Consistent margins */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .main-text {
+    font-size: clamp(20px, 4vw, 30px);
+  }
+
+  .below-text {
+    font-size: clamp(18px, 3.5vw, 25px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text-content {
+    margin: 0 0.5rem; /* Even smaller margins */
+    text-align: center;
+  }
+
+  .main-text {
+    font-size: clamp(18px, 4vw, 25px);
+  }
+
+  .below-text {
+    font-size: clamp(16px, 3vw, 20px);
+  }
+}
