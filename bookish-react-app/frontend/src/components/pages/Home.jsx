@@ -19,7 +19,7 @@ const Home = () => {
             <h3 className="below-text">
               We have you covered sign up <br />
               with us to start your journey!</h3><br />
-            <button className='button'><a href="/sign-up" className='btn-text'>
+            <button className='button'><a href="/signup" className='btn-text'>
               Get Started
             </a></button>
           </div>

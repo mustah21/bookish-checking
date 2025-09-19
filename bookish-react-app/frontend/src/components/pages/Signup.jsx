@@ -10,15 +10,15 @@ function Signup() {
   });
 
   // Generate random password
-  const generatePassword = () => {
-    const chars =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
-    let newPassword = "";
-    for (let i = 0; i < 12; i++) {
-      newPassword += chars.charAt(Math.floor(Math.random() * chars.length));
-    }
-    setForm({ ...form, password: newPassword, confirm: newPassword });
-  };
+  // const generatePassword = () => {
+  //   const chars =
+  //     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
+  //   let newPassword = "";
+  //   for (let i = 0; i < 12; i++) {
+  //     newPassword += chars.charAt(Math.floor(Math.random() * chars.length));
+  //   }
+  //   setForm({ ...form, password: newPassword, confirm: newPassword });
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,8 +33,8 @@ function Signup() {
     <div className={styles.home}>
       <div className={styles["signup-box"]}>
         <h2 className={styles["signup-heading"]}>Create an Account</h2>
-        <form onSubmit={handleSubmit}>
-          <div className={styles["input-field"]}>
+        <form className='signup-form-1' onSubmit={handleSubmit}>
+          <div className={styles["input-field22"]}>
             <input
               type="text"
               placeholder="Username"
@@ -44,7 +44,7 @@ function Signup() {
             />
           </div>
 
-          <div className={styles["input-field"]}>
+          <div className={styles["input-field22"]}>
             <input
               type="email"
               placeholder="Email"
@@ -54,7 +54,7 @@ function Signup() {
             />
           </div>
 
-          <div className={`${styles["input-field"]} ${styles["password-container"]}`}>
+          <div className={`${styles["input-field22"]} ${styles["password-container"]}`}>
             <input
               type="text"
               placeholder="Password"
@@ -62,16 +62,16 @@ function Signup() {
               onChange={(e) => setForm({ ...form, password: e.target.value })}
               required
             />
-            <button
+            {/* <button
               type="button"
               className={styles["suggest-btn"]}
               onClick={generatePassword}
             >
               Suggest
-            </button>
+            </button> */}
           </div>
 
-          <div className={styles["input-field"]}>
+          <div className={styles["input-field22"]}>
             <input
               type="password"
               placeholder="Confirm Password"
@@ -83,7 +83,8 @@ function Signup() {
 
           <br />
           <br />
-          <button type="submit">Create Account</button>
+          <button className={styles["signup-button-22"]} type="submit">
+            Create Account</button>
         </form>
       </div>
     </div>

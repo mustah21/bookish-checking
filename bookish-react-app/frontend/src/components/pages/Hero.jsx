@@ -9,7 +9,7 @@ const Hero = () => {
         <p>Stop losing track of your thoughts.
            Build your personal knowledge library 
            and make every book you read more impactful.</p>
-        <a href="/sign-up" className="cta-btn">Get Started</a>
+        <a href="/signup" className="cta-btn">Get Started</a>
       </div>
     </section>
   );

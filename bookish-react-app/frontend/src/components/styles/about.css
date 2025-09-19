@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+body {
+  max-width: 1700px;
+  margin: 0 auto; /* keeps it centered */
+}
 
  .page {
      /* display: flex;
