@@ -106,15 +106,7 @@ In the project directory, you can run:
 - `npm start` - Runs the app in development mode
 - `npm test` - Launches the test runner
 - `npm run build` - Builds the app for production
-- `npm run eject` - Ejects from Create React App (one-way operation)
-
-## 📄 License
-
-This project is available for educational purposes.
-
-## 👥 Authors
-
-- [@mustah21](https://github.com/mustah21)
+- 
 
 ## 🙏 Acknowledgments
 
@@ -123,3 +115,8 @@ This project is available for educational purposes.
 - Community feedback and contributions
 
 **Note**: This project is under active development. Features and documentation may change as the project evolves.
+
+---
+_This readme has primarily been written by Claude. The code itself has entirely been written by the owner. Nonetheless the the final responsibility for the documentation and its correctness resides with the owner._
+
+
